@@ -32,45 +32,29 @@ struct LinkedList<Element> {
         }
     }
     
-    mutating func deleteFirst() -> E? {
-        if isEmpty {
+    mutating func deleteFirst() -> Element? {
+        guard let result = head?.data else {
             return nil
-        } else if head?.next == nil {
-            let result = head?.data
+        }
+        
+        if head?.next == nil {
             head = nil
             tail = nil
             
             return result
-        } else {
-            let result = head?.data
-            head = head?.next
-            
-            return result
         }
+
+        head = head?.next
+        
+        return result
     }
     
-    private mutating func deleteFirstWithoutReturn() {
-        if isEmpty {
-            return
-        } else if head?.next == nil {
-            head = nil
-            tail = nil
-        } else {
-            head = head?.next
-        }
-    }
-    
-    func peek() -> E? {
-        if isEmpty {
-            return nil
-        } else {
-            return head?.data
-        }
+    func peek() -> Element? {
+        isEmpty ? nil : head?.data
     }
     
     mutating func clear() {
-        for _ in 0...count {
-            deleteFirstWithoutReturn()
-        }
+        head = nil
+        tail = nil
     }
 }
