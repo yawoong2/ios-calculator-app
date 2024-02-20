@@ -77,6 +77,42 @@
 			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
+		06D3E3E92B84D67F009ADCB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0628BFC52B8082EE001E84BA /* LinkedList.swift */,
+				0679FE4C2B8374BD006317B4 /* CalculatorItemQueue.swift */,
+				06219BBC2B83AE8F00F15005 /* CalculateItem.swift */,
+				0628BFC82B809BCC001E84BA /* Node.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06D3E3EA2B84D6CE009ADCB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C713D94C2570E5ED001C3AFC /* LaunchScreen.storyboard */,
+				C713D9472570E5EB001C3AFC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06D3E3EB2B84D6F3009ADCB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C713D9452570E5EB001C3AFC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		06D3E3EC2B84D726009ADCB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C713D94A2570E5ED001C3AFC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C713D9352570E5EB001C3AFC = {
 			isa = PBXGroup;
 			children = (
@@ -98,17 +134,13 @@
 		C713D9402570E5EB001C3AFC /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				06D3E3EC2B84D726009ADCB3 /* Resources */,
+				06D3E3EB2B84D6F3009ADCB3 /* Controller */,
+				06D3E3EA2B84D6CE009ADCB3 /* View */,
+				06D3E3E92B84D67F009ADCB3 /* Model */,
 				C713D9412570E5EB001C3AFC /* AppDelegate.swift */,
 				C713D9432570E5EB001C3AFC /* SceneDelegate.swift */,
-				C713D9452570E5EB001C3AFC /* ViewController.swift */,
-				C713D9472570E5EB001C3AFC /* Main.storyboard */,
-				C713D94A2570E5ED001C3AFC /* Assets.xcassets */,
-				C713D94C2570E5ED001C3AFC /* LaunchScreen.storyboard */,
 				C713D94F2570E5ED001C3AFC /* Info.plist */,
-				0628BFC52B8082EE001E84BA /* LinkedList.swift */,
-				0679FE4C2B8374BD006317B4 /* CalculatorItemQueue.swift */,
-				06219BBC2B83AE8F00F15005 /* CalculateItem.swift */,
-				0628BFC82B809BCC001E84BA /* Node.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
