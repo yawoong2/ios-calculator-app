@@ -5,10 +5,12 @@
 //  Created by JIWOONG on 2024/02/17.
 //
 
-struct LinkedList<E> {
-    private var head: Node<E>?
-    private var tail: Node<E>?
+struct LinkedList<Element> {
+    private var head: Node<Element>?
+    private var tail: Node<Element>?
+    
     var isEmpty: Bool { head == nil }
+    
     var count: Int {
         var result = 0
         var temp = head
@@ -19,7 +21,7 @@ struct LinkedList<E> {
         return result
     }
     
-    mutating func addLast(element: E) {
+    mutating func addLast(element: Element) {
         let newNode = Node(data: element, next: nil)
         if isEmpty {
             head = newNode
@@ -71,5 +73,4 @@ struct LinkedList<E> {
             deleteFirstWithoutReturn()
         }
     }
-
 }
